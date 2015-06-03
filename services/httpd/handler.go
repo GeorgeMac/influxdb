@@ -461,10 +461,10 @@ func MarshalJSON(v interface{}, pretty bool) []byte {
 }
 
 type Point struct {
-	Name   string                 `json:"name"`
-	Time   time.Time              `json:"time"`
-	Tags   map[string]string      `json:"tags"`
-	Fields map[string]interface{} `json:"fields"`
+	Measurement string                 `json:"measurement"`
+	Time        time.Time              `json:"time"`
+	Tags        map[string]string      `json:"tags"`
+	Fields      map[string]interface{} `json:"fields"`
 }
 
 type Batch struct {
